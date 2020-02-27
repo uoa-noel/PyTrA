@@ -15,7 +15,7 @@ def Global_chi2(start,linked,fix_vals,fixed):
 		Data.tracefitmodel.pardict[fixed[i]] = fix_vals[i]
 	fix_ = linked
 	start = np.array(start)
-	print(Data.Traces.shape)
+	print Data.Traces.shape
 	for i in range(len(Data.Traces[:,1])):
 		Data.tracefitmodel.fitData(Data.time,Data.Traces[i,:],fixedpars=fix_)
 		chi2 = (Data.tracefitmodel.chi2Data()[0]+chi2)/2

@@ -48,8 +48,8 @@ class MCMC(HasTraits):
 			if self.parameters[i].dist=='Normal':
 				self.prior_dict[self.parameters[i].name]=self.parameters[i].sig
 
-		print("dictionary created")
-		print(self.prior_dict)
+		print "dictionary created"
+		print self.prior_dict
 
 		x,y,w = Data.tracefitmodel.data
 		model = Data.tracefitmodel.getMCMC(x,y,priors=self.prior_dict,datamodel=None)
