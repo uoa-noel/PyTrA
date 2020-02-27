@@ -1,4 +1,4 @@
-from pymc3 import *
+from pymc import *
 from traits.api import  HasTraits, File, Button, Array, Enum, Instance, Str, List, HasPrivateTraits, Float, Int
 from traitsui.api import Group, Item, View, Label, HSplit, Tabbed, ListEditor
 from Data import Data
